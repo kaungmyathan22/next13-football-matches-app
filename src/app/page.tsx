@@ -19,7 +19,7 @@ export default async function Home() {
           <p>{`${dateConvert}`}</p>
         </div>
       </div>
-      <Status matchesList={matchesDatas} matchesListFinished={matchesDatasFinished} />
+      <Status matchesList={matchesDatas||[]} matchesListFinished={matchesDatasFinished||[]} />
     </section>
   )
 }
